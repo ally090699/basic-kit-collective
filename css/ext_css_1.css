@@ -1,0 +1,290 @@
+
+#title {
+    text-align: center;
+    font-size: 300%;
+    padding-top: 30px;
+    font-family:"Montserrat";
+    color: #cca885b9;
+}
+
+#deal-subtitle {
+    text-align: center;
+    font-size: 200%;
+    font-family:"Dosis", sans-serif;
+    color: #58422a;
+    padding: 20px;
+}
+
+nav{
+    background-color: #e8d9ca78;
+}
+
+nav #banner-title {
+    font-family: "Barlow Condensed", sans-serif;
+    padding-right: 30px;
+    color:#58422a;
+}
+
+nav #banner-slogan {
+    padding-left: 30px;
+}
+
+nav a img{
+    width: 30px;
+    height: 30px; 
+    border: solid 1px white;
+}
+
+p{
+    font-family: "Dosis", sans-serif;
+    color:#725a40;
+    text-indent: 20px;
+}
+
+#carouselExample img{
+    height: 60vh;
+    object-fit: cover;
+}
+
+#aboutsect{
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.aboutsect-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.aboutsect-image{
+    width: 150px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin: 0 10px;
+}
+
+#aboutsect-text{
+    flex: 1;
+    margin: 0 10px;
+}
+
+#member img{
+    height: 200px;
+    width: 140px;
+    float: left;
+    margin-right: 15px;
+}
+
+#aboutteam{
+    padding: 30px;
+}
+
+#member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#teamname{
+    font-family:"Montserrat";
+    color:#58422a;
+}
+
+#teamposition{
+    font-family: "Barlow Condensed", sans-serif;
+    color:#58422a;
+}
+
+#team-title{
+    text-align: left;
+}
+
+.product{
+    width: 18rem;
+    margin-bottom: 30px;
+}
+
+.product-image{
+    width: 100px;
+}
+
+.card-body .card-title{
+    font-family: "Montserrat";
+    color: #58422a;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+#contactform{
+    padding: 20px;
+}
+
+#about-title, #team-title, #products-title, #contact-title, #references-title{
+    font-family: "Barlow Condensed", sans-serif;
+    color: #886644;
+    text-align: center;
+    padding: 20px;
+    background-color: #e8d9ca78;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.pid {
+    padding-top: 20px;
+}
+
+.hidden {
+    display:none;
+}
+
+.visible {
+    display:block;
+}
+
+label, #contactform h6{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: large;
+    color:#58422a
+}
+
+#inputname, #inputphone, #productnum, #inputMessage{
+    padding:10px;
+    border: solid 1px rgb(217, 205, 180);
+    color:rgba(135, 134, 132, 0.793);
+}
+
+#inputname, #inputphone, #inputMessage{
+    display:inline-block;
+}
+
+#contactform{
+    display: flex;
+    flex-direction: column;
+}
+
+#inputMessage{
+    width:100%;
+}
+
+/* transition */
+#backToTopBtn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99; 
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #58422a;
+    border: solid 1px #58422a;
+    border-radius: 10px;
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+#backToTopBtn:hover {
+    opacity: 1;
+    background-color: #58422a;
+    color: white;
+    border: none;
+}
+
+#references-container h6{
+    font-family: "Montserrat";
+    color: #58422a;
+}
+
+#references-container h7{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: large;
+    color: #91775a;
+}
+
+#references-container a{
+    font-family: "Dosis", sans-serif;
+    color: #cab49d;
+}
+
+#contactform .msgR label, #contactform .pid label{
+    color: #7c664f;
+}
+
+/* transparent texture background; added colour to match theme */
+#productsect .product-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 0px;
+    background-image: url("../img/padded.png");
+    background-color: #bda9969d;
+    background-blend-mode: luminosity;
+    perspective: 1000px;
+}
+
+/* transition */
+.card{
+    transition: transform 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    border: solid 1px white;
+    font-size: large;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inner {
+	position:absolute;
+}
+
+/* parallax */
+.parallax-img{
+    width: 100%;
+    height: auto;
+    background-image: url('../img/parallax.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn-outline-success{
+    opacity: 0.5;
+}
+
+/* animation */
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#title, #deal-subtitle{
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* navbar rollover effect */
+.navbar-nav a{
+    color: #85694c;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover{
+    color: #341e07
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+#referencessect, #contactsect, #productsect, #teamsect, #aboutsect{
+    padding-left: 30px;
+}
